@@ -41,7 +41,9 @@ body{
     }
     .header{
         background-color: var(--primary-color);
+        color: var(--secondary-color);
     }
+    
     .nav{
         position: fixed;
         top: 0;
@@ -71,7 +73,7 @@ body{
         justify-content: space-evenly;
         align-items: center;
         flex-basis: 50%;
-        
+        gap: 1rem;
     }
     .menu__item{
         display: flex;
@@ -88,6 +90,7 @@ body{
         padding: 0.5rem;
         text-align: center;
         border-radius: 1rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
     }
     .menu__link--active{
         background-color: var(--accent-color);
@@ -96,13 +99,56 @@ body{
     .menu__link:hover{
         background-color: var(--primary-color-dark);
     }
-    
     .info{
         margin-top: 10vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 90vh;
+    }
+    .info-description{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 50%;
+        height: inherit;
+        color: inherit;
+        min-height: 70vh;
+        gap: 2rem;
+    }
+    .info__title{
+        font-size: 4rem;
+    }
+    .info__paragraph{
+        text-align: justify;
+        font-size: 2rem;
+        width: 80%;
+    }
+    .info__link{
+        color: inherit;
+        font-size: 1.8rem;
+        transition: 0.2s all ease-in-out;
+        padding: 0.5rem 2rem;
+        text-align: center;
+        border-radius: 2rem;
+        background-color: var(--accent-color);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .info__link:hover{
+        background-color: var(--primary-color-dark);
+    }
+    .info-images{
+        flex-basis: 50%;
+        min-height: 70vh;
+        border: 2px solid black;
     }
     .article{
         margin-top: 10vh;
         scroll-margin-top: 20vh;
+       
        
     }
     .subtitulo{
