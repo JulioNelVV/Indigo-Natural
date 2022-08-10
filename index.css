@@ -1,5 +1,6 @@
 :root{
     --primary-color: #C57F63;
+    --primary-color-dark: #825543;
     --secondary-color:#FFF;
     --accent-color: #2C4839;
 }
@@ -93,7 +94,7 @@ body{
     }
     
     .menu__link:hover{
-        background-color: #825543
+        background-color: var(--primary-color-dark);
     }
     
     .info{
